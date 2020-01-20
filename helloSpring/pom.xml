@@ -58,6 +58,7 @@
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -108,15 +109,107 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<dependency>
+		    <groupId>servlets.com</groupId>
+		    <artifactId>cos</artifactId>
+		    <version>05Nov2002</version>
+		</dependency>
 	
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.7</version>
+			<version>4.12</version>
 			<scope>test</scope>
-		</dependency>        
+		</dependency>   
+		
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.16</version>
+		</dependency>
+		
+	 <!-- Tag libs support for view layer -->
+         
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+            <scope>runtime</scope>
+        </dependency>
+         
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+            <scope>runtime</scope>
+        </dependency>
+ 
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+		<dependency>
+		    <groupId>org.apache.tomcat</groupId>
+		    <artifactId>tomcat-jasper</artifactId>
+		    <version>9.0.22</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.5.3</version>
+		</dependency>
+			
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>2.0.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+		<dependency>
+		    <groupId>javax.annotation</groupId>
+		    <artifactId>javax.annotation-api</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6 -->
+		<dependency>
+		    <groupId>oracle</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>11.2.0.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-dbcp</groupId>
+		    <artifactId>commons-dbcp</artifactId>
+		    <version>1.4</version>
+		</dependency>
+			
 	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>Datanucleus</id>
+			<url>http://www.datanucleus.org/downloads/maven2/</url>
+		</repository>
+	</repositories>
+	
     <build>
         <plugins>
             <plugin>
@@ -155,4 +248,7 @@
             </plugin>
         </plugins>
     </build>
+    
+    
+    
 </project>

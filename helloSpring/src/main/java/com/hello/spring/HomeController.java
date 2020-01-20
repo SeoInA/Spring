@@ -36,4 +36,18 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value = "/home2", method = RequestMethod.GET) //value값이 웹에 치는 주소
+	public String home2(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "home2"; //home2라는 jsp 파일을 부르겠다. controller
+	}
+	
 }
