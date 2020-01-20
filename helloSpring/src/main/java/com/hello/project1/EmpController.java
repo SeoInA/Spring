@@ -2,6 +2,8 @@ package com.hello.project1;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,10 +12,22 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.github.study.ex01.controller.SampleController1;
+
 @Controller
 public class EmpController {
 	@Autowired
 	EmpDao dao;
+	
+	
+	private static final Logger logger=LoggerFactory.getLogger(SampleController1.class);
+	
+	@RequestMapping("/empMain")
+	public void empMain() {
+		logger.info("empMain 실행.........");
+	}
+	
+	
 	
 	@RequestMapping("/empform")
 	

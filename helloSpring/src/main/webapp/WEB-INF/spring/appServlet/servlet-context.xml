@@ -28,7 +28,7 @@
 	
 	<beans:bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">    
 		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver"></beans:property>    
-		<beans:property name="url" value="jdbc:db4free.net://localhost:3306/sia2650"></beans:property>    
+		<beans:property name="url" value="jdbc:mysql://db4free.net:3306/sia2650"></beans:property>    
 		<beans:property name="username" value="sia2650"></beans:property>    
 		<beans:property name="password" value="seoina0814^^"></beans:property>    
 	</beans:bean>    
