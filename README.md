@@ -22,4 +22,12 @@
 [실습](https://github.com/SeoInA/Spring/tree/master/helloSpring/src/main/java/com/github/study/ex01/controller)
 
 
+
+### spring3
+
+-> Spring MVC CRUD Example(MySQL JDBC): [실습](https://github.com/SeoInA/Spring/tree/master/helloSpring/src/main/java/com/hello/project1)
+
+-> Spring + MyBatis + MySQL 를 연동을 위한 설정 및 테스트: [실습](https://github.com/SeoInA/Spring/tree/master/helloSpring/src/test/java/com/hello/project2)
+<img width="762" alt="스크린샷 2020-01-20 오후 12 13 42" src="https://user-images.githubusercontent.com/49269187/72696082-523f0000-3b7e-11ea-9c3e-4b444396e64d.png">
+
 -------
